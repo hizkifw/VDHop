@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows10.0.19041.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NHotkey.WindowsForms" Version="2.1.0" />
+    <PackageReference Include="VirtualDesktop" Version="5.0.5" />
+    <PackageReference Include="VirtualDesktop.WinForms" Version="5.0.5" />
+  </ItemGroup>
+
+</Project>
