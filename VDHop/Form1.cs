@@ -47,5 +47,20 @@ namespace VDHop
             var i = Int32.Parse(e.Name);
             desktops[i].Switch();
         }
+
+        private void Form1_Resize(object sender, EventArgs e)
+        {
+            if (FormWindowState.Minimized == this.WindowState)
+            {
+               notifyIcon1.Visible = true;
+               notifyIcon1.ShowBalloonTip(500);
+               this.Hide();
+            }
+
+            else if (FormWindowState.Normal == this.WindowState)
+            {
+               notifyIcon1.Visible = false;
+            }
+        }
     }
 }
